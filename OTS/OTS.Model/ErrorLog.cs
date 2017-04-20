@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace OTS.Model
 {
-    public class Role : Base
+    public class ErrorLog:Base
     {
-        public string roleName { get; set; }
-        public string roleDesc { get; set; }
+        public string errorMsg { get; set; }
     }
 }

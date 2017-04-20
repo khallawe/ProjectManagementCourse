@@ -205,6 +205,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Exam\ExamAreaRegistration.cs" />
+    <Compile Include="Areas\UserArea\Controllers\UserController.cs" />
+    <Compile Include="Areas\UserArea\UserAreaAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -230,6 +233,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="Areas\Exam\Views\web.config" />
+    <Content Include="Areas\UserArea\Views\web.config" />
+    <Content Include="Areas\UserArea\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\UserArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\UserArea\Views\User\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -279,6 +287,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Exam\Controllers\" />
+    <Folder Include="Areas\Exam\Models\" />
+    <Folder Include="Areas\Exam\Views\Shared\" />
+    <Folder Include="Areas\UserArea\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -289,6 +301,18 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OPS.IDAL\OTS.IDAL.csproj">
+      <Project>{00D341D9-009D-479B-B9DE-593431E47CB8}</Project>
+      <Name>OTS.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OTS.BLL\OTS.BLL.csproj">
+      <Project>{825f8e6e-881f-4dac-a4fe-b0e98eff0103}</Project>
+      <Name>OTS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OTS.DALFactory\OTS.DALFactory.csproj">
+      <Project>{2d087e4b-f67c-4686-b228-311ad4918694}</Project>
+      <Name>OTS.DALFactory</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OTS.Model\OTS.Model.csproj">
       <Project>{ba424eba-f0a3-4b08-914c-b5cbd4835099}</Project>
       <Name>OTS.Model</Name>

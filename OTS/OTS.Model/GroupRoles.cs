@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OTS.DAL
+namespace OTS.Model
 {
-    public class Class1
+    public class GroupRoles: Base
     {
+        public Group group { get; set; }
+        public Role role { get; set; }
     }
 }

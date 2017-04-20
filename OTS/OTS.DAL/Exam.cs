@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OTS.DALFactory
+namespace OTS.DAL
 {
-    public class Class1
+    class Exam
     {
     }
 }

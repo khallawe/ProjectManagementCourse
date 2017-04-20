@@ -6,6 +6,7 @@ namespace OTS.Model
 {
     public class User:Base
     {
+
         [Required(ErrorMessage = "this field Required")]
         public string name { get; set; }
         [Required(ErrorMessage = "this field Required")]
@@ -17,7 +18,7 @@ namespace OTS.Model
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string password { get; set; }
-        public List<Roles> roles { get; set; }
+        public Group group { get; set; }
 
     }
 }

@@ -25,6 +25,11 @@ namespace OTS.Model
         public IDbSet<Setting> SettingSet { get; set; }
         public IDbSet<SubInventory> SubInventorySet { get; set; }
         public IDbSet<User> UserSet { get; set; }
+        public IDbSet<Group> GroupSet { get; set; }
+        public IDbSet<Role> RoleSet { get; set; }
+        public IDbSet<GroupRoles> GroupRolesSet { get; set; }
+        public IDbSet<ErrorLog> ErrorLogSet { get; set; }
+
         #endregion
 
         public virtual void Commit()

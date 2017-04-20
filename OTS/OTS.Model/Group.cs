@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OPS.IDAL
+namespace OTS.Model
 {
-    public class Class1
+    public class Group: Base
     {
+        public string groupName { get; set; }
     }
 }

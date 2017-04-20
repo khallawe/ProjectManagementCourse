@@ -37,5 +37,7 @@ namespace OTS.Model
             modeBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             
         }
+
+        //public System.Data.Entity.DbSet<OTS.Model.User> Users { get; set; }
     }
 }
